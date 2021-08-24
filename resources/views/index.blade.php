@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Deeper Photos</title>
     <!-- Favicons -->
-    <link rel="shortcut icon" href="img/donatello.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
