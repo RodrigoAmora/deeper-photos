@@ -61,7 +61,6 @@
                   <p>
                     Fotos do ministério Deeper<br>
                   </p>
-                  <a href="#about" class="btn btn-default btn-lg page-scroll">Ler Mais</a> </div>
               </div>
             </div>
           </div>
