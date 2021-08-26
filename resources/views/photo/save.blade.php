@@ -1,6 +1,6 @@
 @extends('index')
 @section('body')
-  <div id="portfolio" >
+  <div >
     <div class="container">
       <?php if (Auth::check()): ?>
         <div class="row">
