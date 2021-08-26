@@ -34,26 +34,34 @@ class PhotoController extends Controller {
     	$album = new Album();
     	$album->id = $request->idAlbum;
 
-    	$photoService = new PhotoService();
     	if ($request->hasFile('names')) {
 	    	$names = $request->file('names');
-	    	$photos = array();
-	    	foreach($names as $name) {
-		    	//$image = $request->file('name');
-		    	$imagename = time().'.'.$name->getClientOriginalName();
-		    	$nameAlbum = str_replace(" ", "", $request->nameAlbum);
-		    	$destinationPath = public_path('/img/'.$nameAlbum);
-		    	$name->move($destinationPath, $imagename);
+            $nameAlbun = $request->nameAlbum;
+            $idAlbum = $request->idAlbum;
 
-
-		    	$photo = new Photo();
-		    	$photo->destination_path = '/img/'.$nameAlbum."/".$imagename;
-		    	$photo->album_id = $request->idAlbum;
-		    	
-		    	$photoService->savePhoto($photo);
-	    	}
+	    	$this->savePhotoInStorage($names, $nameAlbun, $idAlbum);
     	}
 
     	return back()->with('success','Image Upload successful');
+    }
+
+    private function savePhotoInStorage($names, string $album, string $idAlbum) {
+        foreach($names as $name) {
+                $imagename = time().'.'.$name->getClientOriginalName();
+                $nameAlbum = str_replace(" ", "", $album);
+                $destinationPath = public_path('/img/'.$nameAlbum);
+                $name->move($destinationPath, $imagename);
+
+                $this->savePhotoInDatabase($nameAlbum, $imagename, $idAlbum);
+        }
+    }
+
+    private function savePhotoInDatabase(string $nameAlbum, string $imagename, string $idAlbum) {
+        $photo = new Photo();
+        $photo->destination_path = '/img/'.$nameAlbum."/".$imagename;
+        $photo->album_id = $idAlbum;
+
+        $photoService = new PhotoService();
+        $photoService->savePhoto($photo);
     }
 }
