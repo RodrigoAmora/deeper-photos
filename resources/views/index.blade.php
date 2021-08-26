@@ -59,9 +59,11 @@
                 <div class="intro-text">
                   <h1>Deeper Photos</h1>
                   <p>
-                    Fotos do ministério Deeper<br>
+                    Fotos do ministério Deeper
                   </p>
+                </div>
               </div>
+              @yield('body')
             </div>
           </div>
         </div>
@@ -100,12 +102,14 @@
         </nav>
       </div>
 
+      
+<!--
       @yield('body')
-
+      
       <button id="myBtn" onclick="topFunction()" title="Go to top">
         <img src="img/top.png" width="50" height="50">
       </button>
-
+-->
       <!-- Footer -->
       <footer id="footer">
         <div class="container">
