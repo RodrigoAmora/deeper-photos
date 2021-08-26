@@ -1,6 +1,6 @@
 @extends('index')
 @section('body')
-  <div id="about" class="text-center">
+  <div class="text-center">
     <h1>Lista de Álbuns</h1>
 
     <!-- Albuns -->
