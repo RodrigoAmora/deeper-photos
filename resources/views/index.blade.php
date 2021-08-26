@@ -104,13 +104,14 @@
 
       
 <!--
-      @yield('body')
       
+
       <button id="myBtn" onclick="topFunction()" title="Go to top">
         <img src="img/top.png" width="50" height="50">
       </button>
 -->
       <!-- Footer -->
+      <!--
       <footer id="footer">
         <div class="container">
           <div class="col-6 col-md-4">
@@ -140,10 +141,11 @@
           </div>
         </div>
       </footer>
+      -->
 
       <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>
-      <script type="text/javascript" src="js/btn_to_top.js"></script>
+      <!--<script type="text/javascript" src="js/btn_to_top.js"></script>-->
       <script type="text/javascript" src="js/enviarEmail.js"></script>
       <script type="text/javascript" src="js/SmoothScroll.js"></script>
       <script type="text/javascript" src="js/easypiechart.js"></script>
