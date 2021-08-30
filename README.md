@@ -14,6 +14,10 @@ Gerando a APP_KEY:
 ------------------
 Executar o comando: `php artisan key:generate` e colar o base64 no artibuto  APP_KEY no arquivo `.env`
 
+Migration:
+----------
+Rodando as migrations: `php artisan migrate`
+
 Executando os testes:
 ---------------------
 Executar o comando: `./vendor/bin/phpunit` no diretório raiz do projeto.
