@@ -15,15 +15,4 @@ class AlbumService {
 	public function saveAlbum(Album $album) {
 		$album->save();
 	}
-
-/*
-	public function listarProjetosPessoais() {
-		return ProjetoPessoal::all();
-	}
-
-	public function listarProjetosPessoaisAPI() {
-		$projetosPessoais = ProjetoPessoal::all();
-    	return response()->json($projetosPessoais);
-	}
-	*/
 }
