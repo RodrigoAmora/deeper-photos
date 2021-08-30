@@ -15,4 +15,15 @@ class AlbumService {
 	public function saveAlbum(Album $album) {
 		$album->save();
 	}
+
+	public function saveAlbumCorver(string $idAlbum, string $albumCorver) {
+		$album = Album::find($idAlbum);
+		$album->corver = $albumCorver;
+		$album->save();
+	}
+
+	public function getAlbumCorver(string $idAlbum) {
+		$album = Album::find($idAlbum);
+		return isset($album->corver);
+	}
 }

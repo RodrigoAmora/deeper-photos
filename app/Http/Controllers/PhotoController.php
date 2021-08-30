@@ -14,7 +14,6 @@ use App\Models\Photo;
 
 class PhotoController extends Controller {
 
-
 	public function listAllPhotos() {
         $photoService = new PhotoService();
         $listPhotos = $photoService->listaAllPhotos();
@@ -47,12 +46,12 @@ class PhotoController extends Controller {
 
     private function savePhotoInStorage($names, string $album, string $idAlbum) {
         foreach($names as $name) {
-                $imagename = time().'.'.$name->getClientOriginalName();
-                $nameAlbum = str_replace(" ", "", $album);
-                $destinationPath = public_path('/img/'.$nameAlbum);
-                $name->move($destinationPath, $imagename);
+            $imagename = time().'.'.$name->getClientOriginalName();
+            $nameAlbum = str_replace(" ", "", $album);
+            $destinationPath = public_path('/img/'.$nameAlbum);
+            $name->move($destinationPath, $imagename);
 
-                $this->savePhotoInDatabase($nameAlbum, $imagename, $idAlbum);
+            $this->savePhotoInDatabase($nameAlbum, $imagename, $idAlbum);
         }
     }
 
@@ -63,5 +62,10 @@ class PhotoController extends Controller {
 
         $photoService = new PhotoService();
         $photoService->savePhoto($photo);
+        
+        $albumService = new AlbumService();
+        if (!$albumService->getAlbumCorver($idAlbum)) {
+            $albumService->saveAlbumCorver($idAlbum, $photo->destination_path);
+        }
     }
 }

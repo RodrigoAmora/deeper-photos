@@ -11,7 +11,7 @@ class Album extends Model {
 
     public $timestamps = true;
 
- 	protected $guarded = ['id'];
+ 	//protected $guarded = ['id'];
 
  	/**
      * The attributes that are mass assignable.
@@ -19,6 +19,7 @@ class Album extends Model {
      * @var array
      */
     protected $fillable = [
+        'id',
         'name',
         'description',
     ];
