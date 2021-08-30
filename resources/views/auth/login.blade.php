@@ -26,7 +26,7 @@
 
 			            <div class="form-group row mb-0">
 							<div class="col-md-12">
-			            		<button type="submit" id="btn-enviar" class="btn btn-primary btn-lg page-scroll">LOGIN</button>
+			            		<button type="submit" id="btn-enviar" class="btn btn-default btn-lg page-scroll">LOGIN</button>
 			            	</div>
 			            </div>
 			        </form>
@@ -34,7 +34,7 @@
 			        <div class="form-group row mb-0">
 						<div class="col-md-12">
 							<br>
-		            		<a href="register" class="btn btn-primary btn-lg page-scroll">CASDASTRAR-SE</a>
+		            		<a href="register" class="btn btn-default btn-lg page-scroll">CASDASTRAR-SE</a>
 		            	</div>
 		            </div>
 				</div>

@@ -19,12 +19,12 @@
 
                   <div class="col-md-12">
                     <div class="form-group">
-                      <button type="submit" id="btn-enviar" class="btn btn-primary btn-lg page-scroll">ENVIAR</button>
+                      <button type="submit" id="btn-enviar" class="btn btn-default btn-lg page-scroll">ENVIAR</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--<button type="submit" id="btn-enviar" class="btn btn-default">ENVIAR</button>-->
+              <!--<button type="submit" id="btn-enviar" class="btn btn-primary">ENVIAR</button>-->
             </form>
           </div>
         </div>
