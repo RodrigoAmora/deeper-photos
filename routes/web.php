@@ -38,13 +38,3 @@ Route::get('/sendPhoto', [PhotoController::class, 'listPhotosByIdAlbum']);
 Route::post('/sendPhoto', [PhotoController::class, 'sendPhoto']);
 
 Route::get('/', [Controller::class, 'index']);
-
-/*
-Route::get('/', function () {
-	if (Auth::check()) {
-    	return view('welcome');
-	} else {
-    	return view('login');
-    }
-});//->middleware('auth');
-*/
