@@ -2,7 +2,9 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
     <title>Deeper Photos</title>
+
     <!-- Favicons -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -15,21 +17,11 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/btn_to_top.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 
-    <style type="text/css">
-        .aa {
-            padding:5px;
-        };
-
-        .te {
-          background-color: white;
-          border: 2px solid gray;
-          z-index: 2;
-        }
-    </style>
+    <!-- lightboxed -->
+    <link rel="stylesheet" type="text/css" href="js/lightboxed/lightboxed.css">
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -155,34 +147,14 @@
       <script type="text/javascript" src="js/main.js"></script>
       <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
-      <script type="text/javascript" src="js/imagepreview.min.js"></script>
+      <!-- lightboxed -->
+      <script type="text/javascript" src="js/lightboxed/lightboxed.js"></script>
+
       <script type="text/javascript">
         $(function() {
-          $(".te").hide();
-
-          $(".aa").each(function() {
-              $(this).mouseover(function(event) {
-                $("#portfolio").append("<p id='preview'><img src='"+$(this).attr("href")+"' alt='Image preview' width='400' height='230' /></p>")
-                
-                var posY = event.pageY-10
-                var posX = event.pageX + 30
-
-                $("#preview").css({
-                  "position": "absolute",
-                  "top": posY + "px",
-                  "left": posX + "px",
-                  "z-index": "10"
-                }).fadeIn()
-                
-              })
-
-              $(this).mouseout(function() {
-                $("#preview").remove();
-              })
-          })
-
         })
       </script>
+       
     </div>
   </body>
 </html>

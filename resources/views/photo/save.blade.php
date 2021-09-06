@@ -1,6 +1,6 @@
 @extends('index')
 @section('body')
-  <div >
+  <div>
     <div class="container">
       <?php if (Auth::check()): ?>
         <div class="row">
@@ -28,11 +28,11 @@
             </form>
           </div>
         </div>
+
+        <br><br><br>
       <?php endif ?>
 
-      <br><br><br>
       <hr>
-      <br><br><br>
 
       <!-- Photos -->
       <div class="portfolio-items">
@@ -40,9 +40,9 @@
           <div class="col-sm-6 col-md-3 col-lg-3">
             <div class="card text-center">
               <div class="card-body">
-                <p class="rounded">
-                  <img src="{{$photo->destination_path}}" width="100" height="100" />
-                </p>
+                <img class="img-responsive lightboxed"
+                rel="group1"
+                src="{{$photo->destination_path}}" data-link="{{$photo->destination_path}}" alt="ALT 1" data-caption="{{$nameAlbum}}" width="180" height="100" />
               </div>
             </div>
           </div>
