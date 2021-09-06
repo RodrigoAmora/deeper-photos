@@ -32,10 +32,11 @@
         <br><br><br>
       <?php endif ?>
 
-      <hr>
-
       <!-- Photos -->
       <div class="portfolio-items">
+        <div class="text-center">
+        <h1>Fotos</h1><br>
+        <h3>Álbum: {{$nameAlbum}}</h3>
         <?php foreach ($listPhotos as $photo): ?>
           <div class="col-sm-6 col-md-3 col-lg-3">
             <div class="card text-center">
@@ -47,6 +48,7 @@
             </div>
           </div>
         <?php endforeach ?>
+        </div>
       </div>
 
       <div class="col-xs-12 col-md-12 text-center">
