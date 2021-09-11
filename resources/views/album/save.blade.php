@@ -13,13 +13,13 @@
               <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" placeholder="Nome do álbum....." required="required">
+                  <input type="text" name="name" class="form-control" placeholder="Nome do álbum....." required="required" />
                 </div>
               </div>
 
               <div class="col-md-12">
                 <div class="form-group">
-                  <input type="text" name="description" class="form-control" placeholder="Descrição...." required="required">
+                  <input type="text" name="description" class="form-control" placeholder="Descrição...." />
                 </div>
               </div>
 
