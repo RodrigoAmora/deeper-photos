@@ -94,14 +94,6 @@
         </nav>
       </div>
 
-      
-<!--
-      
-
-      <button id="myBtn" onclick="topFunction()" title="Go to top">
-        <img src="img/top.png" width="50" height="50">
-      </button>
--->
       <!-- Footer -->
       <!--
       <footer id="footer">
@@ -151,10 +143,8 @@
       <script type="text/javascript" src="js/lightboxed/lightboxed.js"></script>
 
       <script type="text/javascript">
-        $(function() {
-        })
+        $(function() {})
       </script>
-       
     </div>
   </body>
 </html>
