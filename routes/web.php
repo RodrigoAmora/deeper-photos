@@ -21,6 +21,7 @@ use App\Http\Controllers\Controller;
 Route::get('/createAlbum', function () {
 	return view('album.save');
 });
+
 Route::post('/saveAlbum', [AlbumController::class, 'saveAlbum'])->middleware('auth');
 
 //HOME
@@ -31,6 +32,7 @@ Route::get('/login', function () {
 	return view('auth.login');
 });
 Route::post('/login', [LoginController::class, 'authenticate']);
+
 Route::get('/logout', [LoginController::class, 'logout']);
 
 //PHOTOS
