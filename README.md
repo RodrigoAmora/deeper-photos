@@ -2,7 +2,6 @@
 
 Projeto usando o Laravel 8.53.0
 
-<br>
 <hr>
 
 Instalando as dependências:
