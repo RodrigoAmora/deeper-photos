@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 use App\Http\Services\AlbumService;
 use App\Http\Services\PhotoService;
@@ -27,6 +28,18 @@ class PhotoController extends Controller {
         $listPhotos = $photoService->listPhotosByIdAlbum($album);
         // return $listPhotos;
         return view('photo.save')->with(['listPhotos' => $listPhotos, 'idAlbum' => $request->idAlbum, 'nameAlbum' => $request->nameAlbum]);
+    }
+
+    public function downloadPhoto(Request $request) {
+        $file = public_path().$request->path;
+        $headers = array(
+                        'Content-Type: image/jpeg',
+                    );
+
+        $namePhoto = explode("/", "".$request->path, 5);
+        $file_path = public_path(".".$request->path);
+        
+        return response()->download($file_path);
     }
 
     public function sendPhoto(Request $request) {

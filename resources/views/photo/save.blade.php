@@ -40,10 +40,14 @@
         <?php foreach ($listPhotos as $photo): ?>
           <div class="col-sm-6 col-md-3 col-lg-3">
             <div class="card text-center">
-              <div class="card-body">
+              <div class="card-body text-center">
                 <img class="img-responsive lightboxed"
                 rel="group1"
                 src="{{$photo->destination_path}}" data-link="{{$photo->destination_path}}" alt="ALT 1" data-caption="{{$nameAlbum}}" width="180" height="100" />
+                
+                <br>
+
+                <a href="download?path={{$photo->destination_path}}" class="btn btn-default btn-lg page-scroll">DOWNLOAD</a>
               </div>
             </div>
           </div>

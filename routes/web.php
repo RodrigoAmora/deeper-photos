@@ -36,6 +36,7 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::get('/logout', [LoginController::class, 'logout']);
 
 //PHOTOS
+Route::get('/download', [PhotoController::class, 'downloadPhoto']);
 Route::get('/sendPhoto', [PhotoController::class, 'listPhotosByIdAlbum']);
 Route::post('/sendPhoto', [PhotoController::class, 'sendPhoto']);
 
