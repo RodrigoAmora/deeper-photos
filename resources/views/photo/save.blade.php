@@ -44,7 +44,7 @@
 
             <img class="img-responsive lightboxed"
             rel="group1"
-            src="{{$photo->destination_path}}" data-link="{{$photo->destination_path}}" alt="ALT 1" data-caption="{{$nameAlbum}}" width="200" height="100" />
+            src="{{$photo->destination_path}}" data-link="{{$photo->destination_path}}" alt="ALT 1" data-caption="{{$nameAlbum}}" height="100" />
             
             <br>
 
