@@ -11,21 +11,20 @@
             <form method="POST" action="saveAlbum">
               @csrf
               <div class="row">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" placeholder="Nome do álbum....." required="required" />
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Nome do álbum....." required="required" />
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="description" class="form-control" placeholder="Descrição...." />
+                  </div>
                 </div>
               </div>
 
-              <div class="col-md-12">
-                <div class="form-group">
-                  <input type="text" name="description" class="form-control" placeholder="Descrição...." />
-                </div>
-              </div>
-
-              </div>
               <button type="submit" id="btn-enviar" class="btn btn-default btn-lg page-scroll">ENVIAR</button>
-              <!--<button type="submit" id="btn-enviar" class="btn btn-primary">ENVIAR</button>-->
             </form>
           </div>
         </div>

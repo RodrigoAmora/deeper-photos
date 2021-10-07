@@ -95,39 +95,6 @@
         </nav>
       </div>
 
-      <!-- Footer -->
-      <!--
-      <footer id="footer">
-        <div class="container">
-          <div class="col-6 col-md-4">
-            <h5>Contato</h5>
-            
-            <p>
-              <ul class="mx-auto">
-                  <li>
-                      <img src="img/email.png" alt="E-mail" width="35" height="35">
-                      <strong>E-mail:</strong> <a href="mailto:deeper@gmail.com">deeper@gmail.com</a>
-                  </li>
-                    
-                  <li>
-                      <img src="img/phone.svg" alt="Celular" width="35" height="35">
-                      <strong>Celular:</strong> <a href="callto:999999999">+55 (21) 99999-9999</a>
-                  </li>
-              </ul>
-            </p>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <h5>Redes Sociais</h5>
-
-            <a href="https://www.instagram.com/rodrigoamora" target="_blank">
-                <img src="img/redes_sociais/instagram.png" alt="Instagram" width="35" height="35">
-            </a>
-          </div>
-        </div>
-      </footer>
-      -->
-
       <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>
       <script type="text/javascript" src="js/enviarEmail.js"></script>
