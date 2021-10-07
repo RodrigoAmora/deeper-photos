@@ -26,7 +26,6 @@ class PhotoController extends Controller {
         $album = new Album();
         $album->id = $request->idAlbum;
         $listPhotos = $photoService->listPhotosByIdAlbum($album);
-        // return $listPhotos;
         return view('photo.save')->with(['listPhotos' => $listPhotos, 'idAlbum' => $request->idAlbum, 'nameAlbum' => $request->nameAlbum]);
     }
 
