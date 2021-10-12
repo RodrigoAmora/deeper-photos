@@ -13,9 +13,9 @@ Gerando a APP_KEY:
 ------------------
 Executar o comando: `php artisan key:generate` e colar o base64 no artibuto  APP_KEY no arquivo `.env`
 
-Migration:
+Migrations:
 ----------
-Rodando as migrations: `php artisan migrate`
+Rodando as migrations no banco da dados: `php artisan migrate`
 
 Executando os testes:
 ---------------------
