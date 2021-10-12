@@ -1,6 +1,6 @@
 # deeper-photos
 
-Projeto usando o Laravel 8.53.0
+Projeto usando PHP e o framework Laravel 8.53.0
 
 <hr>
 
