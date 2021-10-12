@@ -23,7 +23,6 @@
               </div>
             </div>
           </div>
-          <!--<button type="submit" id="btn-enviar" class="btn btn-primary">ENVIAR</button>-->
         </form>
       </div>
     </div>

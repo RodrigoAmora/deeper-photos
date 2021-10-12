@@ -82,7 +82,6 @@
               <ul class="nav navbar-nav">
                 <li class="hidden"> <a href="#page-top"></a> </li>
                 <li> <a class="page-scroll" href="./#header">Home</a> </li>
-                <!-- <li> <a class="page-scroll" href="sendPhoto">Fotos</a> </li> -->
                 @auth
                   <li> <a class="page-scroll" href="createAlbum">Criar Álbum</a> </li>
                   <li> <a class="page-scroll" href="logout">Logout</a> </li>
