@@ -43,11 +43,11 @@
 
             <img class="img-responsive lightboxed"
             rel="group1"
-            src="{{$photo->destination_path}}" data-link="{{$photo->destination_path}}" alt="ALT 1" data-caption="{{$nameAlbum}}" height="100" />
+            src="{{$photo->link_google_drive}}" data-link="{{$photo->link_google_drive}}" alt="ALT 1" data-caption="{{$nameAlbum}}" height="100" />
             
             <br>
 
-            <a href="download?path={{$photo->destination_path}}" class="btn btn-default btn-lg page-scroll">DOWNLOAD</a>
+            <a href="download?path={{$photo->link_google_drive}}" class="btn btn-default btn-lg page-scroll">DOWNLOAD</a>
           </div>
         </div>
       </div>

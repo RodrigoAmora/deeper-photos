@@ -20,7 +20,7 @@ class Photo extends Model {
      * @var array
      */
     protected $fillable = [
-        'destination_path',
+        'link_google_drive',
         'album_id',
     ];
 

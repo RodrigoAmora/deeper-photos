@@ -15,7 +15,7 @@ class CreatePhotosTable extends Migration
     {
         Schema::create('photos', function (Blueprint $table) {
             $table->id();
-            $table->string('destination_path');
+            $table->string('link_google_drive');
             $table->unsignedBigInteger('album_id');
             $table->timestamps();
 
