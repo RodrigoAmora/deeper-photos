@@ -45,6 +45,11 @@ class PhotoController extends Controller {
     	$album = new Album();
     	$album->id = $request->idAlbum;
 
+        $photo = new Photo();
+        $photo->link_google_drive = $request->link_google_drive;
+        $photo->album_id = $idAlbum;
+        $photoService->savePhoto($photo);
+        /*
     	if ($request->hasFile('names')) {
 	    	$names = $request->file('names');
             $nameAlbun = $request->nameAlbum;
@@ -52,7 +57,7 @@ class PhotoController extends Controller {
 
 	    	$this->savePhotoInStorage($names, $nameAlbun, $idAlbum);
     	}
-
+        */
     	return back()->with('success','Image Upload successful');
     }
 
